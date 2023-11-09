@@ -82,6 +82,7 @@ public interface StackADT<E> {
 	 * Postconditions: The provided array contains a copy of all the elements in the stack.
 	 * @param copy, the array to which the elements will be copied.
 	 * @return an array containing every element of the stack, copied to the provided array.
+	 * @throws NullPointerException If the provided 'copy' array is null.
 	 */
-	E[] toArray(E[] copy);
+	E[] toArray(E[] copy) throws NullPointerException;
 }
